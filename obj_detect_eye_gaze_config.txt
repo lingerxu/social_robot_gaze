@@ -1,0 +1,45 @@
+[input]
+#input_file = C:\HuiZhangData\1394cam\1394_console\frames\current.jpg
+input_file = J:\1394_console\frames\current.jpg
+#input_file = C:\henry\two_nao_human_side_versions\4-5-objects_img\human_side\current_1.jpg
+scaling_input = 1
+
+[ROI]
+width  = 130  # in pixel
+height = 90  # in pixel
+
+[gaze]
+mode = 3 # 0: fixed at the center of the view; 1: randomly artificial eye gaze;  2: median of  real eye tracker data during past eye_gaze_buffer_time seconds; 3: the latest real eye tracker data. 
+eye_gaze_buffer_time = 0.5 # use the eye data in the past 0.5 second to calculate more reliable eye gaze.
+current_eye_file = C:\henry\others\eye_data_recorder\current_eye.txt
+
+[control]
+sleep_time = 5  # in ms
+
+[output]
+#output_file  = C:\HuiZhangData\Two_nao_version\files\gaze_out.txt 
+#output_file  =  C:\HuiZhangData\experiment_1_demo\files\gaze_out.txt 
+#output_file  =  C:\HuiZhangData\two_nao_version_learning_v3_stable\files\gaze_out.txt
+output_file  =  C:\Documents and Settings\nao\Desktop\two_nao_version_learning_v3_stable\files\gaze_out.txt
+output_log   = gaze_output_log.txt
+ROI_raw_file = destop_ROIs_raw.txt
+
+use_frame_number   = 0;  # 0: using output_gaze_duration ; 1: using output_frame_number 
+output_frame_number= 8
+output_gaze_duration = 3000 # in ms
+
+print_on_screen = 0
+show_eyegaze_on_whole_image = 1
+show_ROI_image = 1
+output_intermediate_results = 0
+show_timing = 1 
+print_current_attention = 0
+
+[eye_tracker]
+port = 8
+config_file = .\E6000.cfg
+
+
+
+
+
