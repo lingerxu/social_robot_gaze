@@ -1,5 +1,4 @@
-# social_robot_gaze
-### Cooperative Gazing Behaviors in Human Robot Interaction
+# Cooperative Gazing Behaviors in Human Robot Interaction
 
 In this study, we built real-time gaze-contingent robotic agents to investigate how the human participants adjust and coordinate their own behavioral cues when the robotic agents are performing different cooperative gaze behaviors.
 
